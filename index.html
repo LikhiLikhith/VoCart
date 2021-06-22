@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoCart | Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js" async></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo/VOcartLogoPNG.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <style>
+        .login {
+            margin: auto;
+            width: 100%;
+            border: 3px solid #010f35;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="Assets/Logo/VoCartTitlePNGcrop.png" alt="VoCartTitleLogo" width="200px">
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <div class="login" id="login" style="padding: 40px; background-image: url(Assets/Background/compute.png);">
+            <img src="Assets/Logo/VOcartLogoPNG.png" alt="VoCartTitleLogo" width="200px">
+
+            <div class="form">
+                <img src="Assets/Logo/user-male.png" alt="VoCartTitleLogo" width="50px" align="middle"><br>
+                <input id="userid" type="email" placeholder="Your Name" align="middle" style=" margin-left: -10px; border-radius: 10px; width: 300px; height: 30px; font-size: large;font-weight: bold;color: #00a2ff; text-align: center;"><br><br>
+                <img src="Assets/Logo/password.png" alt="VoCartTitleLogo" width="50px" align="middle"><br>
+                <input id="password" type="password" placeholder="VoCart@999" align="middle" style="margin-left: -10px; border-radius: 10px;width: 300px; height: 30px; font-size: large;font-weight: bold;color: #ff0505; text-align: center;"><br>
+                <button class="btn" onclick="login()">Login</button>
+                <h4 id="error_msg" style="color: #ffffff;"></h4>
+            </div>
+
+        </div>
+
+        <!-------Footer------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-3">
+                        <img src="Assets/Logo/SIETKlogof.png" width="150Px" height="150px">
+                        <h3>Siddharth Institute of Engineering & Technology</h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Assets/Logo/VoCartTitlePNG.png">
+                        <p>Virtual Reality Online Cart : " A Step Towards Innovation "</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <img src="Assets/Logo/CseNew.png" width="150Px" height="150px">
+                        <h3>Department of Computer Science and Engineering</h3>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#169; Copyright 2021 - VoCart</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------JS For Toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "700px"
+
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            document.getElementById("loadgif").style.display = "none";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

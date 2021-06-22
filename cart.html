@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoCart | Cart</title>
+    <link rel="stylesheet" href="stylecart.css">
+    <script src="cart.js" async></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo/VOcartLogoPNG.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="Assets/Logo/VoCartTitlePNGcrop.png" alt="VoCartTitleLogo" width="200px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <li><a href="home.html">Home</a></li>
+                            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                            <li><a href="products.html">Products</a></li>
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    <a href=""><img src="Assets/Background/Shopping-bag-blue-icon.png" width="30px" height="30px"></a>
+                    <img src="Assets/Background/menuicon.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+
+        </div>
+
+        <!----Cart Item Details------->
+
+
+        <div class="small-container cart-page">
+            <table class="tab" id="tableHead" style="visibility: hidden;">
+
+                <tr>
+                    <th>Your CART</th>
+                </tr>
+            </table>
+
+
+
+            <!-- <tr>
+                    <td>
+                        <img id="pro-img" src="Assets/VoCart_Products/Jacket for mens/jacketM1.png"><br>
+                        <button class="btn1">Remove</button>
+                    </td>
+                    <td>
+                        <p id="cart-item-name">Leather Jacket</p>
+                    </td>
+                    <td>
+                        <div id="itemprice">₹4,299</div>
+                    </td>
+                    <td><input type="number" min="0" max="10" value="1" oninput="QuantCal()" id="itemquant"></td>
+                    <td id="item-p-total">₹ 4,299</td>
+                </tr> -->
+
+
+
+
+
+            <div class="CartUl" style="display: table; width: 100%;">
+                <ul id="ul" style="margin-left: -100px; display: table-cell;">
+
+                </ul>
+            </div>
+
+            <img id="EmptyCart" src="Assets/Background/empty_cart.png" width="200px" height="150px">
+
+
+            <div class="total-price" style="margin-top: 30px;">
+                <table>
+                    <tr>
+                        <td style="color: rgb(0, 127, 211);">Subtotal</td>
+                        <td id="Sub-total">₹ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(0, 127, 211);">CGST</td>
+                        <td id="GST">₹ 50</td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(0, 127, 211);">SGST</td>
+                        <td id="GST">₹ 50</td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(0, 127, 211);">Total</td>
+                        <td id="Total">₹ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(0, 127, 211);">Coupon</td>
+                        <td><input type="text" id="coupon-c" style="text-transform:uppercase; width: 80px; color: rgb(1, 99, 50); font-weight: bold;"></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border: 0.5px solid black;background-color: rgba(0, 255, 76, 0.377);">
+                            <p style="font-size: 13px; " onclick="couponapply()">Apply Coupon</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(1, 33, 54);" colspan="2" id="Grand-total">
+                            <h2>Grand Total</h2>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(255, 6, 6); font-size:xx-large;" colspan="2" id="Final-price">₹ 100</td>
+                    </tr>
+                </table>
+                <button class="btn" onclick="BuyNow()">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+
+        <!-------Footer------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-3">
+                        <img src="Assets/Logo/SIETKlogof.png" width="150Px" height="150px">
+                        <h3>Siddharth Institute of Engineering & Technology</h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Assets/Logo/VoCartTitlePNG.png">
+                        <p>Virtual Reality Online Cart : " A Step Towards Innovation "</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <img src="Assets/Logo/CseNew.png" width="150Px" height="150px">
+                        <h3>Department of Computer Science and Engineering</h3>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#169; Copyright 2021 - VoCart</p>
+            </div>
+        </div>
+
+    </div>
+    <!------JS For Toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "500px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

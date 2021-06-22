@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoCart | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo/VOcartLogoPNG.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="Assets/Logo/VoCartTitlePNGcrop.png" alt="VoCartTitleLogo" width="200px">
+
+                    </div>
+
+                    <nav>
+                        <ul id="MenuItems">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <li><a href="home.html">Home</a></li>
+                            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                            <li><a href="products.html">Products</a></li>
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                            <li><a href="about.html">About</a></li>
+                            <a href="index.html"><img style="margin-right: 30px;" src="Assets/Background/logout.png" width="30px" height="30px"></a>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="Assets/Background/Shopping-bag-blue-icon.png" width="30px" height="30px"></a>
+                    <img src="Assets/Background/menuicon.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+
+                <h1 style="text-align: center; color: rgb(1, 154, 255);font-style: italic;" id="welcome"></h1>
+
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Shopping at Your Fingertips ;<br>Visualize Before You Buy....!!</h1>
+                        <p>" Experience the new way of Shopping with Virtual Reality "</p>
+                        <a href="products.html" class="btn">Shop Now &#8669;
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Background/vrboy.png" alt="Background">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!----- featured categories----->
+
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img style="height:300px;width: 300px;" src="Assets/VR2Gif.gif">
+                    </div>
+                    <div class="col-3">
+                        <img style="height:300px;width: 300px;" src="Assets/AR2Gif.gif">
+                    </div>
+                    <div class="col-3">
+                        <img style="height:300px;width: 300px;" src="Assets/MrGif.gif">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="offer">
+            <div class="smallcontainer">
+
+                <div class="row">
+                    <div class="col-2">
+                        <h2 style="text-align:left;margin-top: 20px;color: rgb(92, 2, 2);">Virtual Reality (VR) :</h2>
+                        <h4 style="text-align: justify;margin-top: 20px;color: rgb(0, 29, 53);">Virtual Reality (VR) is an immersive experience also called a computer-simulated reality. It refers to computer technologies using reality headsets to generate the realistic sounds, images and other sensations that replicate a
+                            real environment or create an imaginary world. VR is a way to immerse users in an entirely virtual world. A true VR environment will engage all five senses (taste, sight, smell, touch, sound), but it is important to say that
+                            this is not always possible.Today, it is easy to say that VR is a well-established new reality-tech. Moreover, after years of popularity in the gaming industry, we are now seeing this technology into more practical applications.
+                            The market and the industry are still excited about this tech trend and further progress is expected in the near future.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <h2 style="text-align:left;margin-top: 20px;color: rgb(92, 2, 2);">Augmented Reality (AR) :</h2>
+                        <h4 style="text-align: justify;margin-top: 20px;color: rgb(0, 29, 53);">Augmented Reality (AR) is a live, direct or indirect view of a physical, real-world environment whose elements are augmented (or supplemented) by computer-generated sensory input such as sound, video, graphics or GPS data. As AR
+                            exists on top of our own world it provides as much freedom as you are given within your normal life. AR utilizes your existing reality and adds to it utilizing a device of some sort. Mobile and tablets are the most popular
+                            mediums of AR now, through the camera, the apps put an overlay of digital content into the environment. Custom headsets are also being used. As popular AR examples there are Pokemon Go and Snapchat’s new AR bitmojis.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <h2 style="text-align:left;margin-top: 20px;color: rgb(92, 2, 2);">Mixed Reality (MR) :</h2>
+                        <h4 style="text-align: justify;margin-top: 20px;color: rgb(0, 29, 53);">Mixed Reality (MR), sometimes referred to as hybrid reality, is the merging of real and virtual worlds to produce new environments and visualizations where physical and digital objects co-exist and interact in real time. It means
+                            placing new imagery within a real space in such a way that the new imagery is able to interact, to an extent, with what is real in the physical world we know. The key characteristic of MR is that the synthetic content and the
+                            real-world content are able to react to each other in real time.
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!----- featured categories----->
+
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="Assets/Background/ARV02.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="Assets/Background/ARV03.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="Assets/Background/ARV01.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!----- featured products----->
+        <div class="small-container">
+            <h2 style="color: rgb(0, 153, 255);">HOW VR IMPROVES ONLINE SHOPPING EXPERIENCES ?</h2>
+        </div>
+
+        <div class="offer">
+            <div class="smallcontainer">
+
+                <div class="row">
+                    <div class="col-2">
+                        <h4 style="text-align: justify;margin-top: 20px;color: rgb(0, 29, 53);">VR lets customers take their shopping experience outside of the store. It’s an extension of online shopping, though this leap allows shoppers to experience the products, not just see them.Shoppers could explore a virtual store,
+                            picking up and examining items in 3D before deciding to purchase them with just a look. Visualising products online with an added element of personalisation lets people fully engage with the product.People want to see what
+                            a product will look like in relation to quality and style before they spend their hard-earned money on it.With over half of people suggesting that VR would change the way they shop, it seems the idea has a promising future
+                            in the world of retail. With almost six million units of VR devices expected to be sold by the end of 2019, more and more people will have access to virtual reality experiences. That’s a sizeable audience that can’t be left
+                            untapped. It gives you a USP that other competitors might be slow to adopt. It’s also likely to generate higher levels of revenue through the appeal of personalisation and efficiency.
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="small-container" style="margin-top: 80px;">
+            <h2 style="color: rgb(0, 153, 255);">INNOVATING IN-STORE EXPERIENCES WITH VR</h2>
+        </div>
+
+        <div class="offer">
+            <div class="smallcontainer">
+
+                <div class="row">
+                    <div class="col-2">
+                        <h4 style="text-align: justify;margin-top: 20px;color: rgb(0, 29, 53);">With more people using the internet to do their shopping online, it’s important to still give your customers a reason to physically come into the store. For many, shopping can be dull and more like a chore than a fun, personal
+                            experience. VR can change this point of view. It lets your customers engage with your brand and products in a whole new way. It’s especially convenient when the product in question is large or cumbersome, like a car. Lexus
+                            is one of many car manufacturers using VR let potential buyers to test drive the car without even leaving the showroom. It’s not something that’s normally offered in your everyday shopping experience. You attract more people
+                            who want to take the car for a drive with none of the effort – people you could convert into new sales. It creates a new and exciting environment, modernising the 21st-century shopping experience and bringing something unique
+                            to your latest offering. It can even be used to display new shopping centres and experiences that are arriving soon. Using VR to propose what is coming in the future is a useful tactic to appeal to potential clients, business
+                            partners, and even employees. By displaying features such as new shopping centres and products, people get more of a feel for what your business is about and its personality.
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-----Offer---->
+
+
+        <!----Testimonial-->
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>The future of computing will be driven by AR (augmented reality), VR (virtual reality), and MR (mixed reality). Applications include training in unsafe areas, retailing by way of virtual apparel, shoes, property, etc. XR has great
+                            potential in healthcare.</p>
+                        <img src="Assets/Team/ElonMusk.jpg">
+                        <h3 style="margin-top: 15px;">Elon Musk</h3>
+                        <h5 style="color: rgba(0, 0, 0, 0.527);">CEO of Tesla Motors</h5>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>VR is going to be bigger than people realize. Facebook's social media reach into the interactive virtual world and help, fulfill his mission of " helping people come together. "</p>
+                        <img src="Assets/Team/markMawa.jpg">
+                        <h3 style="margin-top: 15px;">Mark Zuckerberg</h3>
+                        <h5 style="color: rgba(0, 0, 0, 0.527);">CEO of Facebook</h5>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Virtual reality can spark students’ imagination and help them learn about topics like how blood flows through the human body or the impact climate change is having on the Great Barrier Reef, in an engaging and immersive way.</p>
+                        <img src="Assets/Team/Sundar_Pi.jpg">
+                        <h3 style="margin-top: 15px;">Sundar Pichai</h3>
+                        <h5 style="color: rgba(0, 0, 0, 0.527);">CEO of Alphabet Inc.(Google)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Brand---------------->
+
+        <!-------Footer------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-3">
+                        <img src="Assets/Logo/SIETKlogof.png" width="150Px" height="150px">
+                        <h3>Siddharth Institute of Engineering & Technology</h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Assets/Logo/VoCartTitlePNG.png">
+                        <p>Virtual Reality Online Cart : " A Step Towards Innovation "</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <img src="Assets/Logo/CseNew.png" width="150Px" height="150px">
+                        <h3>Department of Computer Science and Engineering</h3>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#169; Copyright 2021 - VoCart</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------JS For Toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "700px"
+
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            document.getElementById("loadgif").style.display = "none";
+        }
+    </script>
+
+    <script>
+        window.addEventListener('load', (event) => {
+
+            const UId = localStorage.getItem("UserId");
+
+            const LId = localStorage.getItem("Likhi");
+
+
+            if (UId != null) {
+                document.getElementById("welcome").innerHTML = ("Welcome " + UId + ".....!!");
+            } else if (LId == 'Likhith Sai Vekop') {
+                document.getElementById("welcome").innerHTML = ("Welcome " + LId + ".....!!");
+            }
+
+            localStorage.removeItem('UserId');
+            localStorage.removeItem('Likhi');
+
+            const Lout = localStorage.getItem("LogOut");
+
+            document.getElementById("LogOut").innerHTML = ("Log OUt" + Lout);
+
+        });
+    </script>
+
+</body>
+
+</html>

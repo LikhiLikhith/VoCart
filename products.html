@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoCart | Products</title>
+    <link rel="stylesheet" href="styleproduct.css">
+
+    <script src="addcart.js" async></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo/VOcartLogoPNG.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="Assets/Logo/VoCartTitlePNGcrop.png" alt="VoCartTitleLogo" width="200px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <li><a href="home.html">Home</a></li>
+                            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                            <li><a href="products.html">Products</a></li>
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img id="CartNew" src="Assets/Background/Shopping-bag-blue-icon.png" width="30px" height="30px"></a>
+                    <img src="Assets/Background/menuicon.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-----products Row 1----->
+
+        <div class="small-container">
+            <div class="row1">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Men'sLeatherJacket.html"><img id="ProImg1" src="Assets/VoCart_Products/Jacket for mens/jacketM1.png"></a>
+                    <h4 id="ProdName1">Men's Leather Jacket</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <p id="ProdPrice1">₹ 4,299</p>
+                        <input type="button" id="btn1" class="btn" value="ADD to Cart" onclick="addtoCart1()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="Hoodie&Skirt.html"><img id="ProImg2" src="Assets/VoCart_Products/Fashion wear/fashion wear 1.png"></a>
+                    <h4 id="ProdName2">Hoodie & Skirt</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice2">₹ 1,260</p>
+                        <input type="button" id="btn2" class="btn" value="ADD to Cart" onclick="addtoCart2()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="LongWoolenCoat.html"><img id="ProImg3" src="Assets/VoCart_Products/Jackets for women/jacket for women 1.png"></a>
+                    <h4 id="ProdName3">Long Woolen Coat</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice3">₹ 3,650</p>
+                        <input type="button" id="btn3" class="btn" value="ADD to Cart" onclick="addtoCart3()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="FormalWaistcoat.html"><img id="ProImg4" src="Assets/VoCart_Products/Men Formal Suit/MFS1.png"></a>
+                    <h4 id="ProdName4">Formal Waistcoat</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice4">₹ 1,999</p>
+                        <input type="button" id="btn4" class="btn" value="ADD to Cart" onclick="addtoCart4()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----products Row 2----->
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="R2GamingChair.html"><img id="ProImg5" src="Assets/VoCart_Products/Chair/chair1.png"></a>
+                    <h4 id="ProdName5">R2 Gaming Chair</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice5">₹ 3,999</p>
+                        <input type="button" id="btn5" class="btn" value="ADD to Cart" onclick="addtoCart5()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="WoodenCofeeTable.html"><img id="ProImg6" src="Assets/VoCart_Products/CoffeTable/CT1.png"></a>
+                    <h4 id="ProdName6">Wooden Cofee Table</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice6">₹ 12,300</p>
+                        <input type="button" id="btn6" class="btn" value="ADD to Cart" onclick="addtoCart6()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="3SeatedSofa.html"><img id="ProImg7" src="Assets/VoCart_Products/Sofa set/sofa set 1.png"></a>
+                    <h4 id="ProdName7">3 Seated Sofa</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <p id="ProdPrice7">₹ 35,650</p>
+                        <input type="button" id="btn7" class="btn" value="ADD to Cart" onclick="addtoCart7()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="WoodenTable.html"><img id="ProImg8" src="Assets/VoCart_Products/Table/table 1.png"></a>
+                    <h4 id="ProdName8">Wooden Table</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice8">₹10,500</p>
+                        <input type="button" id="btn8" class="btn" value="ADD to Cart" onclick="addtoCart8()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----products Row 3----->
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="SunGlasses.html"><img id="ProImg9" src="Assets/VoCart_Products/Goggles/goog1.png"></a>
+                    <h4 id="ProdName9">Sun Glasses</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice9">₹ 999</p>
+                        <input type="button" id="btn9" class="btn" value="ADD to Cart" onclick="addtoCart9()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="EdificeAnalogueWatch.html"><img id="ProImg10" src="Assets/VoCart_Products/Watch/watch 1.png"></a>
+                    <h4 id="ProdName10">Edifice Analogue Watch</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <p id="ProdPrice10">₹ 6,999</p>
+                        <input type="button" id="btn10" class="btn" value="ADD to Cart" onclick="addtoCart10()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="ElexEarBuds.html"><img id="ProImg11" src="Assets/VoCart_Products/Earphones/earphones1.png"></a>
+                    <h4 id="ProdName11">Elex EarBuds</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice11">₹ 1,200</p>
+                        <input type="button" id="btn11" class="btn" value="ADD to Cart" onclick="addtoCart11()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="PS4DualshockController.html"><img id="ProImg12" src="Assets/VoCart_Products/DualShock/dualshocks 1.png"></a>
+                    <h4 id="ProdName12">PS4 Dualshock Controller</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice12">₹ 5,100</p>
+                        <input type="button" id="btn12" class="btn" value="ADD to Cart" onclick="addtoCart12()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----products Row 4----->
+
+
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="BebeHandheldbag.html"><img id="ProImg13" src="Assets/VoCart_Products/Hand Bag/handbag 1.png"></a>
+                    <h4 id="ProdName13">Bebe Handheld bag</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice13">₹ 6,999</p>
+                        <input type="button" id="btn13" class="btn" value="ADD to Cart" onclick="addtoCart13()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="Nike'sAirJordan1.html"><img id="ProImg14" src="Assets/VoCart_Products/Jordan/jordan 1.png"></a>
+                    <h4 id="ProdName14">Nike's Air Jordan 1</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice14">₹ 16,050</p>
+                        <input type="button" id="btn14" class="btn" value="ADD to Cart" onclick="addtoCart14()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="UnisexBackpack.html"><img id="ProImg15" src="Assets/VoCart_Products/Bag/bag1.png"></a>
+                    <h4 id="ProdName15">Unisex Backpack</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice15">₹ 4,300</p>
+                        <input type="button" id="btn15" class="btn" value="ADD to Cart" onclick="addtoCart15()" />
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <a href="Men'sSolidSneakers.html"><img id="ProImg16" src="Assets/VoCart_Products/Shoes/shoe 1.png"></a>
+                    <h4 id="ProdName16">Men's Solid Sneakers</h4>
+                    <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <p id="ProdPrice16">₹ 2,100</p>
+                        <input type="button" id="btn16" class="btn" value="ADD to Cart" onclick="addtoCart16()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="color: rgb(5, 155, 255);">" PHYSICAL STORE "</h2><br>
+        <a href="PhysicalStore.html"><img id="ProImg16" src="Assets/Background/PhysicalStore.png" width="200px" height="200px"></a><br><br>
+
+        <!-------Footer------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-3">
+                        <img src="Assets/Logo/SIETKlogof.png" width="150Px" height="150px">
+                        <h3>Siddharth Institute of Engineering & Technology</h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Assets/Logo/VoCartTitlePNG.png">
+                        <p>Virtual Reality Online Cart : " A Step Towards Innovation "</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <img src="Assets/Logo/CseNew.png" width="150Px" height="150px">
+                        <h3>Department of Computer Science and Engineering</h3>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#169; Copyright 2021 - VoCart</p>
+            </div>
+        </div>
+
+    </div>
+    <!------JS For Toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "500px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
